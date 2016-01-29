@@ -17,8 +17,8 @@
                     <meta name="apple-itunes-app" content="app-id=933676896">
         		<title>SGKampung - Join Your Neighbourhood - Local News, Events, Reviews, Garage Sales, Festivals &amp; Recommendations in Your Town</title>
 
-		<link rel="shortcut icon" href="https://d267ktrsfwi5o8.cloudfront.net/img/favicon.ico?v=1.1.7.17" type="image/x-icon">
-		<link rel="icon" href="https://d267ktrsfwi5o8.cloudfront.net/img/favicon.ico?v=1.1.7.17" type="image/x-icon">
+		<link rel="shortcut icon" href="../public/img/SGKampung.ico" type="image/x-icon">
+		<link rel="icon" href="../public/img/SGKampung.ico" type="image/x-icon">
 
 		<!--[if lte IE 8]>
 			<link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -45,7 +45,7 @@
         <script src="/js/source/epic-functions.js" type="text/javascript"></script>
         <script src="/js/source/additions.js" type="text/javascript"></script>
         <script src="/js/source/user.js" type="text/javascript"></script>
-        <script src="/js/source/nabo.js" type="text/javascript"></script>
+        <script src="/js/source/SG Kampung.js" type="text/javascript"></script>
         <script src="/js/source/api.js" type="text/javascript"></script>
         <script src="/js/source/log.js" type="text/javascript"></script>
         <script src="/js/source/forms.js" type="text/javascript"></script>
@@ -80,15 +80,6 @@
 	</head>
 	<body class="SGKampung home_empty">
 
-    <div class="wrapper">
-      <div class="clouds" id="animate-area">
-      </div>
-      <div class="house">
-      </div>
-      <div class="grass">
-      </div>
-    </div>
-
 <script src="/js/source/gallery.js" type="text/javascript"></script>
 
 <div class="landing-pages home-page cf">
@@ -98,7 +89,7 @@
                 <div class="container landing-header">
                     <div class="row">
                         <a class="header-logo" href="/">
-                            <img src="/img/logos/SGKampung_landingpage_logo.png" alt="SGKampung Logo"/>
+                            <img src="../public/img/SGKampung.ico" alt="SGKampung Logo"/>
                         </a>
                         <a href="/signin" class="btn btn-lg btn-default login-btn transition">Log in</a>
                         <ul class="top-header-links">
@@ -118,9 +109,9 @@
                             <div class="col-md-7 noPaddingRightDesktop">
                                 <img class="mini-loader" src="/img/app/loader-28x28.gif" />
 
-                                <input name="suburbName" id="suburb" class="form-control input-lg address-lookup" type="text" value="" placeholder="Enter your suburb" autocomplete="off" autofocus="autofocus" tabindex="1"/>
-                                <input name="suburbId" id="suburbId" type="hidden" value="" class="addressId"/>
-                                <input name="suburbShortName" id="suburbShortName" type="hidden" value=""/>
+                                <input name="ConstituentName" id="Constituent" class="form-control input-lg address-lookup" type="text" value="" placeholder="Enter your Constituent" autocomplete="off" autofocus="autofocus" tabindex="1"/>
+                                <input name="ConstituentId" id="ConstituentId" type="hidden" value="" class="addressId"/>
+                                <input name="ConstituentshortName" id="ConstituentshortName" type="hidden" value=""/>
 
                                 <input name="groupSlug" type="hidden" value=""/>
                                 <input name="eventId" type="hidden" value=""/>
@@ -129,7 +120,7 @@
                                 <input name="marketingCode" type="hidden" id="marketingCode" value=""/>
                                 <input name="invitationCode" type="hidden" id="invitationCode" value=""/>
                                 <div class="results"></div>
-                                <p class="lookup-error errors">Please enter your suburb</p>
+                                <p class="lookup-error errors">Please enter your Constituent</p>
                             </div>
 
                             <div class="col-md-5">
@@ -137,34 +128,7 @@
                             </div>
                         </div>
                     </form>
-                    <h4 class="divider"><span>or</span></h4>
-                    <div class="row">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-10 cf">
-                            <div class="row">
-                                <label class="control-label col-xs-12 text-left invitation-code-label">If you have received an invitation letter</label>
-                            </div>
-                            <form method="POST" id="submitWithCodeForm" action="/onboarding/register" autocomplete="off" enctype="multipart/form-data">
-                                <div class="row">
-                                    <div class="col-md-7 noPaddingRightDesktop invitation-code-form">
-                                        <input name="marketingCode" type="hidden" value=""/>
-                                        <input class="invitation-code-type-input" type="hidden" name="codeType" value="">
-                                        <input name="groupSlug" type="hidden" value=""/>
-                                        <input name="eventId" type="hidden" value=""/>
-                                        <input class="form-control invitation-code-input" name="invitationCode" type="text" placeholder="Enter your invitation code" value="">
-                                        <p class="invitation-error errors">Sorry. We don't recognise that invitation code. Please try again or enter your suburb</p>
-                                    </div>
-                                    <div class="col-md-5 invitation-code-btn">
-                                        <button type="submit" class="btn btn-lg btn-block btn-default transition sign-with-code-btn">Sign up with code</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-1">
-                        </div>
-                    </div>
-                </div>
+                  </div>
                 <div class="westpac-banner">
                     <img class="desktop" src="" alt="">
                     <img class="mobile" src="" alt="">
@@ -176,20 +140,20 @@
                 <div class="col-xs-12 cf">
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                        <h2>Here are some of the ways over <strong>5,000 suburbs</strong> are using Nabo to get the best out of their local area.</h2>
+                        <h2>Here are some of the ways <strong>Residents</strong> are using SG Kampungs to get the best out of their local area.</h2>
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-md-4">
                         <div class="pillar">
                             <div class="image-holder local-knowledge"></div>
                             <h3>LOCAL KNOWLEDGE</h3>
-                            <p>Recommend and discover the best things around you, from local events and attractions, a trusted service or tradie, to the best coffee in town.</p>
+                            <p>Recommend and discover the best things around you, from local events and attractions, a trusted service or tradie, to the best food treats in town.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="pillar">
-                            <div class="image-holder safer-suburb"></div>
-                            <h3>A SAFER SUBURB</h3>
+                            <div class="image-holder safer-Constituent"></div>
+                            <h3>A SAFER LIVING SPACE</h3>
                             <p>Create a support network of local people who can keep an eye on your home or pet while you're away. Grow a stronger neighbourhood together.</p>
                         </div>
                     </div>
@@ -208,42 +172,42 @@
                 <div class="container">
                     <div class="landing-footer fake-footer">
                         <div class="app-buttons">
-                                                            <a target="_blank" href="https://itunes.apple.com/us/app/nabo-australia/id933676896"><img src="/img/app-store.png"></a>
-                                                                                        <a target="_blank" href="https://play.google.com/store/apps/details?id=au.com.nabo"><img class="android" src="/img/google-play.png"></a>
+                                                            <a target="_blank" href="https://itunes.apple.com/us/app/SG Kampung-Singapore/id933676896"><img src="/img/app-store.png"></a>
+                                                                                        <a target="_blank" href="https://play.google.com/store/apps/details?id=au.com.SG Kampung"><img class="android" src="/img/google-play.png"></a>
                                                     </div>
                         <div class="links">
-                            <a href="https://help.nabo.com.au/hc/en-us/articles/202364115-About-Nabo" target="_blank">About Us</a>
+                            <a href="https://" target="_blank">About Us</a>
                             <a href="/organisations">Organisations</a>
                             <a href="/whats-on">Events</a>
-                            <a href="http://blog.nabo.com.au/" target="_blank">Blog</a>
-                            <a href="https://help.nabo.com.au/hc/en-us/sections/200465365-Nabo-Leads" target="_blank">Leads</a>
-                            <a href="https://help.nabo.com.au/hc/en-us/articles/201654869-Privacy-Policy" target="_blank">Privacy Policy</a>
-                            <a href="https://help.nabo.com.au/hc/en-us/articles/201654899-Terms-of-Use" target="_blank">Terms of Use</a>
-                            <a href="https://help.nabo.com.au/hc/en-us" target="_blank">Help</a>
-                            <a class="last" href="https://help.nabo.com.au/hc/en-us/requests/new" target="_blank">Contact Us</a>
+                            <a href="http:///" target="_blank">Blog</a>
+                            <a href="https://" target="_blank">Leads</a>
+                            <a href="https://" target="_blank">Privacy Policy</a>
+                            <a href="https://" target="_blank">Terms of Use</a>
+                            <a href="https://" target="_blank">Help</a>
+                            <a class="last" href="https" target="_blank">Contact Us</a>
                         </div>
                         <div class="app-buttons mobile">
-                                                            <a target="_blank" href="https://itunes.apple.com/us/app/nabo-australia/id933676896"><img src="/img/app-store.png"></a>
-                                                                                        <a target="_blank" href="https://play.google.com/store/apps/details?id=au.com.nabo"><img class="android" src="/img/google-play.png"></a>
+                                                            <a target="_blank" href="https://itunes.apple.com/us/app/SG Kampung-Singapore/id933676896"><img src="/img/app-store.png"></a>
+                                                                                        <a target="_blank" href="https://play.google.com/store/apps/details?id=au.com.SG Kampung"><img class="android" src="/img/google-play.png"></a>
                                                     </div>
                         <div class="row copyright">
                             <div class="col-sm-12">
-                                &copy; Nabo Community 2015
+                                &copy; SG KAMPUNG Community 2016
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row gray-box" id="whatIsNabo">
+        <div class="row gray-box" id="whatIsSGKampung">
             <div class="col-xs-12 cf">
-                <div class="nabo-video cf">
+                <div class="SG Kampung-video cf">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
                         <div class="video-wrapper">
                             <div class="text mobile">
-                                <h4>Nabo is the social network<br>for your suburb</h4>
-                                <p>From finding locally recommended tradies, events and nearby bargains, to creating a safer and friendlier neighbourhood. Nabo is the free social network helping you get the best out of your local area.</p>
+                                <h4>SG Kampung is the social network<br>for your Constituent</h4>
+                                <p>From finding locally recommended tradies, events and nearby bargains, to creating a safer and friendlier neighbourhood. SG Kampung is the free social network helping you get the best out of your local area.</p>
                             </div>
                             <div class="video">
                                 <div class="frame">
@@ -251,8 +215,8 @@
                                 </div>
                             </div>
                             <div class="text">
-                                <h4>Nabo is the social network for your suburb</h4>
-                                <p>From finding locally recommended tradies, events and nearby bargains, to creating a safer and friendlier neighbourhood. Nabo is the free social network helping you get the best out of your local area.</p>
+                                <h4>SG Kampung is the social network for your Constituent</h4>
+                                <p>From finding locally recommended tradies, events and nearby bargains, to creating a safer and friendlier neighbourhood. SG Kampung is the free social network helping you get the best out of your local area.</p>
                             </div>
                         </div>
                     </div>
@@ -279,7 +243,7 @@
                                     <img class="gallery-images" src="/img/landing/tour-1.png" data-caption="Join in the conversation in your local area and discuss local news with your neighbours" alt="">
                                 </div>
                                 <div class="slide">
-                                    <img class="gallery-images" src="/img/landing/tour-2.jpg" data-caption="See your neighbours on Nabo and invite more to join you" alt="">
+                                    <img class="gallery-images" src="/img/landing/tour-2.jpg" data-caption="See your neighbours on SG Kampung and invite more to join you" alt="">
                                 </div>
                                 <div class="slide">
                                     <img class="gallery-images" src="/img/landing/tour-3.jpg" data-caption="Discover what's going on around you and find a local event" alt="">
@@ -295,17 +259,11 @@
                 <div class="container">
                     <div class="as-featured-images cf">
                         <h4><span>As featured</span></h4>
-                        <img src="/img/onboarding/featured/abc.png" alt="ABC">
-                        <img src="/img/onboarding/featured/sky-news.png" alt="Sky News">
-                        <img src="/img/onboarding/featured/australian.png" alt="Australian">
-                        <img src="/img/onboarding/featured/courier-mail.png" alt="Courier Mail">
-                        <img src="/img/onboarding/featured/herald-sun.png" alt="Herald Sun">
-                        <img src="/img/onboarding/featured/daily-telegraph.png" alt="Daily Telegraph">
-                        <img src="/img/onboarding/featured/mercury.png" alt="Mercury">
-                        <img src="/img/onboarding/featured/mx.png" alt="MX">
-                        <img src="/img/onboarding/featured/perth-now.png" alt="Perth Now">
-                        <img src="/img/onboarding/featured/financial-review.png" alt="Financial Review">
-                        <img src="/img/onboarding/featured/advertiser.png" alt="Advertiser">
+                        <img src="../public/img/mediacover/ga.png" alt="General Assemb.ly">
+                        <img src="../public/img/mediacover/ga.png" alt="General Assemb.ly">
+                        <img src="../public/img/mediacover/ga.png" alt="General Assemb.ly">
+                        <img src="../public/img/mediacover/ga.png" alt="General Assemb.ly">
+                        <img src="../public/img/mediacover/ga.png" alt="General Assemb.ly">
                     </div>
                 </div>
             </div>
@@ -315,19 +273,19 @@
                 <div class="container">
                     <div class="landing-footer bottom-footer">
                         <div class="links">
-                            <a href="https://help.nabo.com.au/hc/en-us/articles/202364115-About-Nabo" target="_blank">About Us</a>
-                            <a href="/organisations">Organisations</a>
-                            <a href="/whats-on">Events</a>
-                            <a href="http://blog.nabo.com.au/" target="_blank">Blog</a>
-                            <a href="https://help.nabo.com.au/hc/en-us/sections/200465365-Nabo-Leads" target="_blank">Leads</a>
-                            <a href="https://help.nabo.com.au/hc/en-us/articles/201654869-Privacy-Policy" target="_blank">Privacy Policy</a>
-                            <a href="https://help.nabo.com.au/hc/en-us/articles/201654899-Terms-of-Use" target="_blank">Terms of Use</a>
-                            <a href="https://help.nabo.com.au/hc/en-us" target="_blank">Help</a>
-                            <a class="last" href="https://help.nabo.com.au/hc/en-us/requests/new" target="_blank">Contact Us</a>
+                            <a href="../public/aboutus.html" target="_blank">About Us</a>
+                            <a href="../public/organizations.html">Organisations</a>
+                            <a href="../public/events.html">Events</a>
+                            <a href="../public/blog.html" target="_blank">Blog</a>
+                            <a href="../public/leads.html" target="_blank">Leads</a>
+                            <a href="../public/privacypolicy.html" target="_blank">Privacy Policy</a>
+                            <a href="../public/tou.html" target="_blank">Terms of Use</a>
+                            <a href="../public/help.html" target="_blank">Help</a>
+                            <a class="last" href="../public/contactus.html" target="_blank">Contact Us</a>
                         </div>
                         <div class="row copyright">
                             <div class="col-sm-12">
-                                &copy; Nabo Community 2015
+                                &copy; SG Kampung Community 2016
                             </div>
                         </div>
                     </div>
@@ -399,31 +357,31 @@
         else if (utmContent == 'safety') {
             $('.landing-background').addClass('utm-safety-page');
         }
-        else if (utmContent == 'wpnabo') {
-            $('.landing-background').addClass('utm-westpacnabo1');
-            $('.westpac-banner .desktop').attr('src', '/img/westpac/westpacnabo1.png');
-            $('.westpac-banner .mobile').attr('src', '/img/westpac/westpacnabo1MOB.png');
+        else if (utmContent == 'wpSG Kampung') {
+            $('.landing-background').addClass('utm-westpacSG Kampung1');
+            $('.westpac-banner .desktop').attr('src', '/img/westpac/westpacSG Kampung1.png');
+            $('.westpac-banner .mobile').attr('src', '/img/westpac/westpacSG Kampung1MOB.png');
         }
-        else if (utmContent == 'stgeorgenabo') {
-            $('.landing-background').addClass('utm-westpacnabo2');
-            $('.westpac-banner .desktop').attr('src', '/img/westpac/westpacnabo2.png');
-            $('.westpac-banner .mobile').attr('src', '/img/westpac/westpacnabo2MOB.png');
+        else if (utmContent == 'stgeorgeSG Kampung') {
+            $('.landing-background').addClass('utm-westpacSG Kampung2');
+            $('.westpac-banner .desktop').attr('src', '/img/westpac/westpacSG Kampung2.png');
+            $('.westpac-banner .mobile').attr('src', '/img/westpac/westpacSG Kampung2MOB.png');
         }
-        else if (utmContent == 'banksanabo') {
-            $('.landing-background').addClass('utm-westpacnabo3');
-            $('.westpac-banner .desktop').attr('src', '/img/westpac/westpacnabo3.png');
-            $('.westpac-banner .mobile').attr('src', '/img/westpac/westpacnabo3MOB.png');
+        else if (utmContent == 'banksaSG Kampung') {
+            $('.landing-background').addClass('utm-westpacSG Kampung3');
+            $('.westpac-banner .desktop').attr('src', '/img/westpac/westpacSG Kampung3.png');
+            $('.westpac-banner .mobile').attr('src', '/img/westpac/westpacSG Kampung3MOB.png');
         }
-        else if (utmContent == 'bomnabo') {
-            $('.landing-background').addClass('utm-westpacnabo4');
-            $('.westpac-banner .desktop').attr('src', '/img/westpac/westpacnabo4.png');
-            $('.westpac-banner .mobile').attr('src', '/img/westpac/westpacnabo4MOB.png');
+        else if (utmContent == 'bomSG Kampung') {
+            $('.landing-background').addClass('utm-westpacSG Kampung4');
+            $('.westpac-banner .desktop').attr('src', '/img/westpac/westpacSG Kampung4.png');
+            $('.westpac-banner .mobile').attr('src', '/img/westpac/westpacSG Kampung4MOB.png');
         }
         else {
             $('.landing-background').addClass('utm-neighbour-page');
         };
 
-        var suburbs,
+        var Constituents,
             indexActive = -1,
             q = [],
             apiWorking = false;
@@ -470,14 +428,14 @@
                     };
                 }, function(err){
                     $('.invitation-code-input').addClass('has-error');
-                    $('.invitation-error').empty().html('Sorry. We don’t recognise that invitation code. Please try again, or enter your suburb.').show();
+                    $('.invitation-error').empty().html('Sorry. We don’t recognise that invitation code. Please try again, or enter your Constituent.').show();
                 });
             }
         });
 
         $( ".lookup-form" ).submit(function( event ) {
             var $form = $(this);
-            if( $('#suburbId').val() && $form.find('.address-lookup').val() ) {
+            if( $('#ConstituentId').val() && $form.find('.address-lookup').val() ) {
                 // submit()
             }
             else {
@@ -510,18 +468,18 @@
 
 
             apiWorking = true;
-            $('#suburb').parent().find('.suburbId').val('');
+            $('#Constituent').parent().find('.ConstituentId').val('');
             $('.mini-loader').show();
 
-            API().call('/suburb/lookup', data, {type:'get', autoLoader: false}).then(function(res){
+            API().call('/Constituent/lookup', data, {type:'get', autoLoader: false}).then(function(res){
                 if(res && res.data && res.data.items && res.data.items.length) {
-                    suburbs = res.data.items;
+                    Constituents = res.data.items;
                 }
                 else {
-                    suburbs = [];
+                    Constituents = [];
                 }
                 indexActive = -1;
-                drawOptions(suburbs);
+                drawOptions(Constituents);
                 $('.mini-loader').hide();
                 apiWorking = false;
             }, function(err) {
@@ -533,7 +491,7 @@
         function drawOptions( data , index) {
             var ind = index ? index : -1;
             var $results = $('.results');
-            var newWidth = $("#suburb").css("width");
+            var newWidth = $("#Constituent").css("width");
             $results.css("width", newWidth);
             var ul, li, a;
 
@@ -547,16 +505,16 @@
                         li.addClass('active');
                     }
                     li.html( data[i].name );
-                    li.data( 'suburb', data[i] );
+                    li.data( 'Constituent', data[i] );
                     li.appendTo(ul);
 
                     li.click(function(){
                         var $this = $(this);
-                        var suburb = $this.data('suburb');
-                        $('#suburb').val( suburb.name );
-                        $('#suburbId').val( suburb.id );
-                        $('#suburbShortName').val( suburb.shortName );
-                        $('#lastSavedData').val( suburb.name );
+                        var Constituent = $this.data('Constituent');
+                        $('#Constituent').val( Constituent.name );
+                        $('#ConstituentId').val( Constituent.id );
+                        $('#ConstituentshortName').val( Constituent.shortName );
+                        $('#lastSavedData').val( Constituent.name );
                         q = [];
                         $results.hide();
                     })
@@ -565,8 +523,8 @@
                 if(data.length == 1) {
                     indexActive = 0;
                     $results.find('ul li').addClass('active');
-                    $('#suburbId').val(data[0].id);
-                    $('#suburbShortName').val( data[0].shortName );
+                    $('#ConstituentId').val(data[0].id);
+                    $('#ConstituentshortName').val( data[0].shortName );
                 }
             }
             else{
@@ -574,7 +532,7 @@
             }
         }
 
-        $('#suburb').on('paste', function(e) {
+        $('#Constituent').on('paste', function(e) {
             var $this = $(this);
             setTimeout(function(){
                 if( $this.val().length > 2 ) {
@@ -584,18 +542,18 @@
             }, 100)
         });
 
-        $('#suburb').keyup(function(e){
+        $('#Constituent').keyup(function(e){
             e.preventDefault();
             e.stopPropagation();
 
             if( e.keyCode == 13 ) {
 
                 if( $('.results ul li.active').length ) {
-                    var suburb = $('.results ul li.active').data('suburb');
-                    $('#lastSavedData').val( suburb.name );
-                    $('#suburb').parent().find('button').removeClass('disabled');
-                    $('#suburbId').val(suburb.id);
-                    $('#suburbShortName').val( suburb.shortName );
+                    var Constituent = $('.results ul li.active').data('Constituent');
+                    $('#lastSavedData').val( Constituent.name );
+                    $('#Constituent').parent().find('button').removeClass('disabled');
+                    $('#ConstituentId').val(Constituent.id);
+                    $('#ConstituentshortName').val( Constituent.shortName );
                     $('.results').hide();
                     $(".lookup-form").submit();
                 }
@@ -618,11 +576,11 @@
                 $('.results ul li').each(function(i, li){
                     if(indexActive == i) {
                         var $li = $(li);
-                        var suburb = $li.data('suburb');
+                        var Constituent = $li.data('Constituent');
                         $li.addClass('active');
-                        $('#suburb').val( suburb.name );
-                        $('#suburbShortName').val( suburb.shortName );
-                        $('#suburbId').val( suburb.id );
+                        $('#Constituent').val( Constituent.name );
+                        $('#ConstituentshortName').val( Constituent.shortName );
+                        $('#ConstituentId').val( Constituent.id );
                     }
                 })
                 return false;
@@ -636,10 +594,10 @@
                 $('.results ul li').each(function(i, li){
                     if(indexActive == i) {
                         var $li = $(li);
-                        var suburb = $li.data('suburb');
+                        var Constituent = $li.data('Constituent');
                         $li.addClass('active');
-                        $('#suburb').val( suburb.name );
-                        $('#suburbId').val( suburb.id )
+                        $('#Constituent').val( Constituent.name );
+                        $('#ConstituentId').val( Constituent.id )
                     }
                 })
                 return false;
@@ -679,8 +637,8 @@
         $(window).resize(fixBackground);
 
         $(window).load(function(){
-            if( window.location.hash == '#whatIsNabo' ){
-                $('html, body').animate({ scrollTop: $('#whatIsNabo').offset().top}, 1000);
+            if( window.location.hash == '#whatIsSGKampung' ){
+                $('html, body').animate({ scrollTop: $('#whatIsSGKampung').offset().top}, 1000);
             }
             else if ( window.location.hash == '#takeTour' ) {
                 $('html, body').animate({ scrollTop: $('#takeTour').offset().top}, 1000);
