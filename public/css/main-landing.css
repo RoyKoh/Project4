@@ -1,38 +1,3 @@
-@-webkit-keyframes animatedBackground{
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-}
-
-#animate-area	{
-	width: 100%;
-	height: 500px;
-	background-image: url('https://dl.dropboxusercontent.com/u/78039576/CodePen/clouds.jpg?raw=1');
-	background-position: 0px 0px;
-	background-repeat: repeat-x;
-  position: absolute;
-  z-index: -1;
-
-	-webkit-animation: animatedBackground 300s linear infinite;
-}
-
-.house {
-  width: 897px;
-  height: 336px;
-  background: url('https://dl.dropboxusercontent.com/u/78039576/CodePen/house.png?raw=1');
-  position: absolute;
-  bottom: 100px;
-  left: 25%;
-  z-index: 1;
-}
-.grass {
-  background: url('https://dl.dropboxusercontent.com/u/78039576/CodePen/grass.png?raw=1') repeat-x;
-  width: 100%;
-  height: 118px;
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-}
-
 body {
   margin: 0;
   padding: 0;
