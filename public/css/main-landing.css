@@ -1,5 +1,92 @@
 body {
   margin: 0;
-  padding: 0;
-  background: #7bb9f2;
+}
+
+.col-xs-12landing-background {
+ height: 500px; /* height of the background image? */
+ width: auto;
+ background-image: url('../img/hdbnew.jpg');
+ background-repeat: no-repeat;
+ text-align: center;
+ background-size: cover;
+ margin: 0;
+}
+
+.header-logo {
+ align-self: flex-start;
+}
+
+.containerlanding-header {
+  display: flex;
+}
+
+.form-holder {
+  height: 250px;
+  width: 850px;
+  background-color: white;
+  margin:0 auto;
+  padding: 20px;
+  color: black;
+  alignment: justify;
+  left: 50%;
+  top: 50%;
+}
+
+.rowwhite-boxpillars-boxtext-center {
+  height: 1100px; /* height of the background image? */
+  width: auto;
+  background-color: grey;
+  text-align: center;
+  background-size: cover;
+}
+
+.image-holderlocal-knowledge {
+    width: 250px;
+    height: 250px;
+    align-self: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.image-holdersafer-Constituent {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.image-holderbuy-sell {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.col-md-4 {
+  align-items: center;
+}
+
+.home-carousel h2 {
+   font-size:40px;
+   text-align: center;
+   color: orange;
+   opacity: 0.6;
+}
+
+.gallery-wrap {
+  height: 300px;
+  width: 1250px;
+  background-color: grey;
+  margin:0 auto;
+  padding: 20px;
+  color: black;
+  alignment: justify;
+  left: 50%;
+  top: 50%;
+}
+
+.landing-footerbottom-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
