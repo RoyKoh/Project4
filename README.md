@@ -5,7 +5,7 @@ This community website is my final project in General Assembly's Web Development
 
 ## GENERAL APP FEATURES
 
-Features users' registration and login, message exchange, event & blog publishing and online exchange of goods and services.  registration for single/double players, embedded midi/mp3, possibly weave some animations included. It currently runs on desktop web-browser, eventually to be deployed IOS and Android if permitted.
+Features users' registration and login, message exchange, event & blog publishing and online exchange of goods and services. It currently runs on desktop web-browser, eventually to be deployed IOS and Android if permitted.
 
 
 ## CODE DESCRIPTION
@@ -50,7 +50,6 @@ On your terminal:
 ## LICENCE
 
 ISC
-
 
 ## WORK IN PROGRESS
 
